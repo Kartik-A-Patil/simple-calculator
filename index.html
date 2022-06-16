@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link  rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
+    <div class="no-use"></div>
     <div class="container">
         <div class="calculator">
-            <input type="text" name="screen" id="screen">
+            <input type="text" name="screen" id="screen" placeholder="0">
+            <div class="back">
+               <div class="clear">
+                 <button>Clear</button>
+               </div>
+               <div class="backspace">
+                <button> <i class="material-icons">backspace</i></button>
+               </div>
+            </div>
         <table>
-            <tr class="clear">
-                <td><button>Clear</button></td>
-            </tr>
           <tr>
             <td><button>7</button></td>
             <td><button>8</button></td>
@@ -26,7 +32,7 @@
             <td><button>4</button></td>
             <td><button>5</button></td>
             <td><button>6</button></td>
-            <td><button>X</button></td>
+            <td><button>x</button></td>
           </tr>
           <tr>
             <td><button>1</button></td>

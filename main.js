@@ -5,7 +5,7 @@ let screenValue = '';
     item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
         console.log(buttonText)
-        if(buttonText=='X'){
+        if(buttonText=='x'){
             buttonText = '*';
             screenValue += buttonText;
             screen.value = screenValue;
@@ -16,6 +16,10 @@ let screenValue = '';
         }
         else if (buttonText == '='){
           screen.value = eval(screenValue);
+        }
+        else if (buttonText == 'backspace'){
+            screenValue = screen.value.slice(0, - 1);
+            screen.value = screenValue;
         }
         else{
             screenValue += buttonText;
