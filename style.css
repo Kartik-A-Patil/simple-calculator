@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Sriracha&display=swap');
-body{
-    font-family:'digital-clock-font';
-    src: url('put_the_location_to_your_font.ttf or .otf');
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-::selection{
-    background: transparent;
 
-  }
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7.ttf');
+   }
+   
+*{
+    margin: 0;
+    padding: 0;
+}
+i.material-icons{
+    font-size: 36px;
+}
+
 .no-use{
     position: absolute;
     top: 68px;
@@ -19,7 +24,7 @@ body{
 .container{
     text-align: center;
     background: -webkit-linear-gradient(left, rgb(46, 46, 46), rgb(41, 41, 41), rgb(36, 36, 36), rgb(31, 31, 31));
-    width: 400px;
+    width: 367px;
     margin: 50px auto;
     border-radius: 20px;
     padding: 20px 0px;
@@ -30,9 +35,10 @@ body{
 table{
     margin: auto;
     margin-bottom: 0px;
+    
 }
 input{
-    font-size: 42px;
+    font-size: 62px;
     border-radius: 10px;
     height: 90px;
     margin: 0px auto 70px auto;
@@ -40,16 +46,23 @@ input{
     background-color: rgb(206, 223, 206);
     width: 340px;
     text-align: end;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    
+    font-family:'digital-clock-font'
 }
 button{
-    font-size: 30px;
+    font-size: 32px;
     width: 70px;
     height: 60px;
     margin: 5px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px 0px rgb(0, 0, 0);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+     user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+ 
+   
 }
 button:hover{
     background-color: rgb(199, 199, 199);
@@ -57,7 +70,7 @@ button:hover{
 .clear button{
     position: absolute;
     top: 125px;
-    right: 33px;
+    right: 18px;
     width: 100px;
     height: 50px;
     background-color: rgb(89, 200, 89);
@@ -68,7 +81,7 @@ button:hover{
 .backspace button{
     position: absolute;
     top: 125px;
-    left: 35px;
+    left: 20px;
     height: 50px;
     font-size: 35px;
 }
