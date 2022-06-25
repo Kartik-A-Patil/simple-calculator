@@ -90,3 +90,12 @@ button.equal{
 button.equal:hover{
     background-color: rgb(236, 134, 0);
 }
+
+
+
+@media (max-width: 1417px){
+    body{
+           font-size: 70%;   
+    }
+        
+}
