@@ -7,6 +7,7 @@
    
 *{
     margin: 0;
+
 }
 .no-use{
     position: absolute;
@@ -51,7 +52,7 @@ button{
     border-radius: 8px;
     box-shadow: 0px 2px 5px 0px rgb(0, 0, 0);
     font-family: 'Kdam Thmor Pro', sans-serif;
-     user-select: none; /* supported by Chrome and Opera */
+    user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Firefox */
@@ -62,12 +63,20 @@ button{
 button:hover{
     background-color: rgb(199, 199, 199);
 }
+.ii-x button{ 
+    position: absolute;
+    top: 125px;
+    left: 100px;
+    height: 50px;
+    font-size: 25px;
+}
 .clear button{
     position: absolute;
     top: 125px;
     right: 18px;
     width: 100px;
     height: 50px;
+    font-size: 20px;
     background-color: rgb(89, 200, 89);
 }
 .clear button:hover{
@@ -78,20 +87,11 @@ button:hover{
     top: 125px;
     left: 20px;
     height: 50px;
-    font-size: 35px;
+    font-size: 20px;
 }
 button.equal{
     background-color: rgb(255, 150, 0);
 }
 button.equal:hover{
     background-color: rgb(236, 134, 0);
-}
-
-
-
-@media (max-width: 500px){
-    body{
-           font-size: 70%;   
-    }
-        
 }

@@ -14,6 +14,11 @@ let screenValue = '';
             screenValue = '';
             screen.value = screenValue;
         }
+        else if (buttonText == '2x'){
+            buttonText = '**';
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
         else if (buttonText == '='){
           screen.value = eval(screenValue);
         }
