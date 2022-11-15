@@ -1,6 +1,9 @@
 let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
-let screenValue = '';
+let screenValue = "";
+
+
+
  for (item of buttons) {
     item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
@@ -22,13 +25,17 @@ let screenValue = '';
         else if (buttonText == '='){
           screen.value = eval(screenValue);
         }
-        else if (buttonText == 'backspace'){
+        else if (buttonText == 'del'){
             screenValue = screen.value.slice(0, - 1);
             screen.value = screenValue;
         }
-        else{
+        else {
             screenValue += buttonText;
-            screen.value = screenValue;
+            screen.value = screenValue;   
+        }
+
+        if(screenValue.length > 8){
+            document.getElementById('screen').style.fontSize = "50px";
         }
     })
  }
