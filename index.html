@@ -7,20 +7,27 @@
     <title>calculator</title>
     <link  rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="Calculator-icon.png">
 </head>
 <body>
-    <div class="no-use"></div>
+    <!-- <div class="no-use"></div> -->
     <div class="container">
-        <div class="calculator">
-            <input type="text" name="screen" id="screen" placeholder="0">
-            
+      <div class="calculator">
+        <div class="main-screen">
+         <div class="preview">
+          <input type="text" name="preview" id="preview" placeholder="0">
+         </div>
+         <div class="value-screen">
+          <input type="text" name="screen" id="screen" placeholder="0">
+        </div>
+      </div>
         <table>
           <tr>
-            
-               <button class="backspace">del</button>
-               <button class="ii-x">2x</button>
-               <button class="clear">Clear</button>
-
+            <br>
+              <td><button class="clear blue">AC</button></td>
+              <td><button class="backspace blue">del</button></td>
+              <td><button class="blue">+/-</button></td>
+              <td><button class="org">-</button></td>
             <!-- <td><button  class="brakets">(</button></td>
             <td><button  class="brakets">)</button></td> -->
           </tr>
@@ -28,32 +35,27 @@
             <td><button>7</button></td>
             <td><button>8</button></td>
             <td><button>9</button></td>
-            <td><button>/</button></td>
-            <td><button>%</button></td>
+            <td><button class="org">/</button></td>
           </tr>
           <tr>
             <td><button>4</button></td>
             <td><button>5</button></td>
             <td><button>6</button></td>
-            <td><button>x</button></td>
-            <td><button>+/-</button></td>
+            <td><button class="org">x</button></td>
+           
           </tr>
           <tr>
             <td><button>1</button></td>
             <td><button>2</button></td>
             <td><button>3</button></td>
-            <td><button>+</button></td>
-            <td><button id="sqrt">√</button></td>
-          </tr>
-          <tr>
-            <td><button>0</button></td>
-            <td><button>00</button></td>
-            <td><button>.</button></td>
-            <td><button>-</button></td>
-            <td><button class="equal">=</button></td>
-
-          </tr>          
+            <td><button class="org">+</button></td>
+          </tr>         
         </table>
+        <div class="zero-line">
+          <button class="zero">0</button>
+          <button>.</button>         
+          <button class="equal org">=</button>
+        </div>
     </div>
 </div>
 </body>
