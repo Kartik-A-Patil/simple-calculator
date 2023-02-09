@@ -15,7 +15,7 @@
       <div class="calculator">
         <div class="main-screen">
          <div class="preview">
-          <input type="text" name="preview" id="preview" placeholder="0">
+          <input type="text" name="preview" id="preview" placeholder="">
          </div>
          <div class="value-screen">
           <input type="text" name="screen" id="screen" placeholder="0">
