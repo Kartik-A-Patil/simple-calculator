@@ -25,4 +25,4 @@ You can view the live preview of the calculator [here](https://calculator-in-htm
 
 ## Preview
 
-![Calculator Preview](calculator-preview.png)
+![Calculator Preview](Screenshot_20240108-084058.png)
